@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Navigation</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="active" data-page="home">Home</li>
+                <li data-page="about">About Us</li>
+                <li data-page="contact">Contact Us</li>
+                <li class="login-btn">Login</li>
+                <li class="create-account-btn">Create Account</li>
+            </ul>
+        </nav>
+        <h1>Welcome to Shayan</h1>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <h1>Welcome to Shayan</h1>
+        </section>
+        <section id="about" class="page">
+            <h1>Welcome to Shayan. We are software professionals.</h1>
+        </section>
+        <section id="contact" class="page">
+            <h1>Contact Us Form</h1>
+        </section>
+        <section id="login" class="page">
+          <h1>Login Form</h1>
+        </section>
+         <section id="create-account" class="page">
+          <h1>Create Account Form</h1>
+        </section>
+    </main>
+    <script src="switch.js"></script>
+</body>
+</html>
