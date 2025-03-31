@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account Vaildation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Create Account</h2>
+        <form id="createAccountForm">
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname">
+                <div class="error" id="firstnameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <div class="error" id="passwordError"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+                <div class="error" id="confirmPasswordError"></div>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age">
+                <div class="error" id="ageError"></div>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div class="form-group">
+                <label>Games:</label>
+                <input type="checkbox" id="kabadi" name="games" value="kabadi">
+                <label for="kabadi">Kabadi</label>
+                <input type="checkbox" id="cricket" name="games" value="cricket">
+                <label for="cricket">Cricket</label>
+                <input type="checkbox" id="football" name="games" value="football">
+                <label for="football">Football</label>
+                <input type="checkbox" id="hockey" name="games" value="hockey">
+                <label for="hockey">Hockey</label>
+            </div>
+            <div class="form-group">
+                <label for="hero">Hero</label>
+                <select id="hero" name="hero">
+                    <option value="Vijay">Vijay</option>
+                    <option value="Ajith">Ajith</option>
+                    <option value="Rajini">Rajini</option>
+                    
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="isAdmin" name="isAdmin">
+                <label for="isAdmin">Is Admin?</label>
+            </div>
+            <button type="submit" id="createAccountBtn" disabled>Create Account</button>
+        </form>
+        <script src="script.js"></script>
+    </div>
+    
+</body>
+</html>
